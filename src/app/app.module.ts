@@ -1,3 +1,5 @@
+import { HeaderBodyComponent } from './../components/header-body/header-body';
+import { PilhaPage } from './../pages/pilha/pilha';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -17,11 +19,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    PilhaPage,
+    HeaderBodyComponent
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HeaderBodyComponent
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,7 +34,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    PilhaPage,
+    HeaderBodyComponent
   ],
   providers: [
     StatusBar,
